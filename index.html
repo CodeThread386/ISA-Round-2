@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <button onclick="toggleConverter('temperature')">Celsius to Fahrenheit</button>
+        <button onclick="toggleConverter('weight')">lb to kg</button>
+        <button onclick="toggleConverter('length')">Foot to Inches</button>
+        <button onclick="toggleConverter('mass')">Pound to Ounces</button>
+        <button onclick="toggleConverter('mole')">Grams to Moles</button>
+    </div>
+
+    <div class="container">
+        <div class="slideshow-container" id="home-content">
+            <!-- Slide 1: Welcome Message -->
+            <div class="slide active">
+                <h1 style="font-size: 3em; font-weight: bold;">Welcome to the Unit Converter</h1>
+                <p style="font-size: 1.5em;">Easily convert different units with our stylish and efficient tool!</p>
+            </div>
+
+            <!-- Slide 2: Celsius to Fahrenheit -->
+            <div class="slide">
+                <h2>Celsius to Fahrenheit</h2>
+                <p>Convert temperatures from Celsius to Fahrenheit using the formula:</p>
+                <p><strong>°F = (°C × 9/5) + 32</strong></p>
+            </div>
+
+            <!-- Slide 3: Pounds to Kilograms -->
+            <div class="slide">
+                <h2>Pounds to Kilograms</h2>
+                <p>Convert weights from pounds to kilograms using the formula:</p>
+                <p><strong>kg = lb × 0.453592</strong></p>
+            </div>
+
+            <!-- Slide 4: Feet to Inches -->
+            <div class="slide">
+                <h2>Feet to Inches</h2>
+                <p>Convert lengths from feet to inches using the formula:</p>
+                <p><strong>inches = ft × 12</strong></p>
+            </div>
+
+            <!-- Slide 5: Pounds to Ounces -->
+            <div class="slide">
+                <h2>Pounds to Ounces</h2>
+                <p>Convert masses from pounds to ounces using the formula:</p>
+                <p><strong>oz = lb × 16</strong></p>
+            </div>
+
+            <!-- Slide 6: Grams to Moles -->
+            <div class="slide">
+                <h2>Grams to Moles</h2>
+                <p>Convert grams to moles using the formula:</p>
+                <p><strong>moles = grams / molar mass</strong></p>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button class="prev" onclick="prevSlide()"><span>&#10094;</span></button>
+            <button class="next" onclick="nextSlide()"><span>&#10095;</span></button>
+        </div>
+
+        <div id="content-container"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
